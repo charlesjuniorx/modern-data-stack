@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+
+  metabase-app:
+    image: metabase/metabase
+    container_name: metabase
+    restart: always
+    volumes:
+      - /home/app/metabase-data:/metabase-data
+    ports:
+      - 3000:3000
+ 
